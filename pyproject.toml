@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "alura-store"
+version = "0.1.0"
+description = ""
+authors = ["EricPetterson <eric_pl_1@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+isort = "^6.0.1"
+black = "^25.1.0"
+flake8 = "^7.2.0"
+taskipy = "^1.14.1"
+
+[tool.taskipy.tasks]
+format = """
+isort .
+black .
+"""
+lint = "flake8 ."
+
+.flake8
+[flake8]
+max-line-length = 89
+extend-ignore = E203,E701,W291
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
