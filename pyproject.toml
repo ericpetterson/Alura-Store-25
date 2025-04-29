@@ -12,6 +12,7 @@ isort = "^6.0.1"
 black = "^25.1.0"
 flake8 = "^7.2.0"
 taskipy = "^1.14.1"
+pandas = "^2.2.3"
 
 [tool.taskipy.tasks]
 format = """
@@ -20,10 +21,7 @@ black .
 """
 lint = "flake8 ."
 
-.flake8
-[flake8]
-max-line-length = 89
-extend-ignore = E203,E701,W291
+
 
 [build-system]
 requires = ["poetry-core"]

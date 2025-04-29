@@ -1,13 +1,41 @@
-# Ambiente virtual
+# Ambiente virtual (Poetry ou venv)
 .venv/
 
-# Arquivos Python compilados
+# Cache de Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
 
-# Configurações de editor
+# Arquivos de log
+*.log
+
+# Configurações do VS Code
 .vscode/
 
-# Arquivos do sistema operacional
+# Ambiente de testes
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+
+# Build (distribuição)
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Sistema operacional
 .DS_Store
 Thumbs.db
+
+# Arquivos de Poetry
+poetry.lock
+
+# Banco de dados local
+*.sqlite3
